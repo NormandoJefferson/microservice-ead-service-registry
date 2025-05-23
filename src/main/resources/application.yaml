@@ -1,11 +1,12 @@
 server:
   port: 8761
 
+# Nome da aplicação.
 spring:
   application:
     name: ead-service-registry
 
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: false # Para que não se registre nela mesmo.
+    fetchRegistry: false # Para não buscar um registro no eureka.
